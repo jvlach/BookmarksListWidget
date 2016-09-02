@@ -1,0 +1,191 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gr.jvlach.bookmarkswidget"
+    android:installLocation="internalOnly"
+    android:versionCode="15"
+    android:versionName="2.4" >
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    
+    <!-- 
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="22" />
+    
+    -->
+
+
+
+    <application
+         android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Transparent" >
+        <activity
+            android:name="gr.jvlach.bookmarkswidget.HelpActivity"
+            android:label="@string/app_name" 
+            
+            android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="gr.jvlach.bookmarkswidget.MainActivity"
+            android:label="@string/app_name" 
+           >
+        </activity>
+        <!-- android:screenOrientation="portrait" -->
+        
+        <!-- for the widget -->
+        <receiver android:name="gr.jvlach.bookmarkswidget.BookmarkWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+        
+         <!--v. 2.0 for the widget -->
+        <receiver android:name="gr.jvlach.bookmarkswidget.BookmarkWidgetProvider2x2" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_2perline" />
+        </receiver>
+        
+         <!--v. 2.0:END-->
+
+        <!-- The service serving the RemoteViews to the collection widget -->
+        <service
+            android:name="gr.jvlach.bookmarkswidget.BookmarkWidgetService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <!-- The content provider serving the (fake) weather data -->
+        <provider
+            android:name="gr.jvlach.bookmarkswidget.BookmarkDataProvider"
+            android:authorities="gr.jvlach.bookmarkswidget.provider" 
+            android:exported="true"/>
+<!--android:launchMode="singleTop" android:theme="@android:style/Theme.Holo.Light.Dialog" -->
+        <activity android:name="gr.jvlach.bookmarkswidget.AppWidgetConfigure" 
+            
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        
+        <!-- v. 2.0: -->
+        <!-- The service serving the RemoteViews to the collection widget -->
+        <service
+            android:name="gr.jvlach.bookmarkswidget.BookmarkWidgetService2x2"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <!-- The content provider serving the (fake) weather data -->
+        <provider
+            android:name="gr.jvlach.bookmarkswidget.BookmarkDataProvider2x2"
+            android:authorities="gr.jvlach.bookmarkswidget.provider2x2" 
+            android:exported="true"/>
+<!--android:launchMode="singleTop" android:theme="@android:style/Theme.Holo.Light.Dialog" -->
+        <activity android:name="gr.jvlach.bookmarkswidget.AppWidgetConfigure2x2" 
+            
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <!-- v. 2.0:END -->
+        
+        <!-- v. 1.8 -->
+        <activity
+            android:name="gr.jvlach.bookmarkswidget.OtherAppsActivity"
+            android:label="@string/otherapps" 
+            
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        
+        <!-- new google ads -->
+        <!-- ads -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <!-- Activity required to show ad overlays. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent"/>
+        
+        
+         <!-- startApp -->
+       <!--  <activity android:name="com.startapp.android.publish.list3d.List3DActivity"
+          android:theme="@android:style/Theme" />
+
+<activity android:name="com.startapp.android.publish.AppWallActivity"
+          android:theme="@android:style/Theme.Translucent"
+          android:configChanges="orientation|keyboardHidden|screenSize" /> -->
+        
+        
+        <!-- mobilecore ads -->
+        <service
+		android:name="com.ironsource.mobilcore.MobileCoreReport"
+		android:enabled="true"
+		android:exported="false" android:process=":mcServiceProcess">
+		</service>
+		
+		<receiver
+		android:name="com.ironsource.mobilcore.InstallationTracker"
+		android:enabled="true"
+		android:process=":installationTracker">
+		</receiver>
+		
+		<activity
+		android:name="com.ironsource.mobilcore.InterstitialVideoActivity"
+		android:configChanges="keyboardHidden|orientation|screenSize"
+		android:keepScreenOn="true"/>
+        
+		
+		
+		<!-- appszoom -->
+		<activity android:name="com.appszoom.appszoomsdk.AppsZoomInterstitialActivity"
+		 android:theme="@android:style/Theme.Translucent" />
+		
+        <!--
+		Detect app installs. Necessary to control the installs your app
+		generates (avoid using it if you are only tracking)
+        -->
+        <receiver android:name="com.appszoom.appszoomsdk.AppsZoomPackageAddedReceiver" >
+            <intent-filter>
+                <data android:scheme="package" />
+
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+            </intent-filter>
+        </receiver>
+        <!-- Detect the installation of your app and the source. -->
+        <receiver
+            android:name="com.appszoom.appszoomsdk.AppsZoomReferrerReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+		
+        
+    </application>
+
+</manifest>

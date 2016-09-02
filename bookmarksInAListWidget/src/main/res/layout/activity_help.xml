@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp" android:layout_weight="0.1">
+    
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/help_main"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/textViewPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#F5F5F5"
+        android:elevation="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/privacy_policy"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonclose"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/ok" 
+        style="@style/btnStyleBlue"/>
+    
+    <Button
+        android:id="@+id/buttonrate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/rate" 
+        style="@style/btnStyleBlue"/>
+    
+    <Button
+        android:id="@+id/buttonother"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/otherapps" 
+        style="@style/btnStyleBlue"/>
+
+   <!--   <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_button" />-->
+    
+     </LinearLayout>
+    </ScrollView>
+<!-- <com.google.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="a14f7572d0f2165"
+                         ads:adSize="BANNER"
+                         ads:testDevices="TEST_EMULATOR"
+                         ads:loadAdOnCreate="true"/>-->
+</LinearLayout>

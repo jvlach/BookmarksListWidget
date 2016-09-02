@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/appwidget_prefix_title_default"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <ImageButton
+        android:id="@+id/refresh"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="2dp"
+        android:background="@raw/ic_refresh" 
+        
+        android:scaleType="centerInside"/>
+
+</LinearLayout>
+    
+<ListView
+    android:id="@+id/mylist2x2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+</ListView>
+ <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="#ffffff"
+            android:text="@string/empty_view_text"
+            android:textSize="20sp" />
+    
+    
+    
+</LinearLayout>

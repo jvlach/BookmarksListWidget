@@ -1,0 +1,28 @@
+<resources>
+<color name="custom_theme_color">#b0b0ff</color>
+<color name="custom_theme_color2">#ffffff</color>
+<color name="custom_theme_color3">#000000</color>
+  <style name="Theme.Transparent" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+  
+  
+  <style name="btnStyleBlue" parent="@android:style/Widget.Button">
+       <item name="android:textSize">15sp</item>
+       <item name="android:textStyle">bold</item>
+       <item name="android:textColor">#FFFFFF</item>
+       <item name="android:gravity">center</item>
+       <item name="android:shadowColor">#000000</item>
+       <item name="android:shadowDx">1</item>
+       <item name="android:shadowDy">1</item>
+       <item name="android:shadowRadius">0.6</item>
+       <item name="android:background">@drawable/btn_blue</item>
+       <item name="android:padding">10dip</item>
+   </style>
+</resources>
+<!-- @android:color/transparent -->

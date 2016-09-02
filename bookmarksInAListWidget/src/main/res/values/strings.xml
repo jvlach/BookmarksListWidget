@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bookmarks in a list Widget</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="empty_view_text">No bookmarks found</string>
+    <string name="toast_format_string">Opening %1$s</string>
+    <string name="toast_format_sms_string">Sending SMS to %1$s</string>
+    <string name="item_format_string">%1$s in %2$s</string>
+    <string name="search">Search</string>
+    <string name="configwhat">What to show?</string>
+    <string name="favorites">Favorites</string>
+    <string name="all">All</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="appwidget_prefix_default">stock</string>
+    <string name="help_main">This is a simple widget that shows your bookmarks (from Android\'s stock browser or Google Chrome) as a scrollable list.\n\n
+         Only these two browsers are supported. 
+        If you use any of them to serf the internet, you might find this widget useful.\n\n
+	    There are two different widgets included. To install the widget, select \"Bookmarks in a list widget\" 4x2 
+	    or 2x2 from the available widgets.\n 
+	    You will see the configuration screen, where you can select
+	     the transparency of the background, the color theme (dark or light), or you can customize the colors. You can see a preview of the widget with the colors you have selected. 
+	     You can also select whether the bookmarks will be ordered by description or date of access (most recent first).\n If Google Chrome is installed on your device, you can also select which browser\'s bookmarks you want the widget to show.\n\n
+	     You can have more than one widgets on your home screens, each showing different bookmarks.\n
+	     The widget is resizable. The initial size is 4x2 or 2x2 (columns x rows), but you can resize it as you want. 
+	     To resize, long click on the widget until it gets detached from the screen, then release. You will be able to resize it now.\n\n
+	     If you have changed the bookmarks (add-delete-change), you can refresh each widget by pressing the button with the circular arrows.\n\n
+	     You can also search the bookmarks by clicking the \"Search\" button. The search is not performed in the widget itself. 
+	     Instead an activity is launched.\n\n
+	     Notes: \n
+-The app needs to be installed in the internal memory of the phone in order for the widget to show up and work.\n
+-If the widget does not show chrome\'s bookmarks: open chrome, put it in the background with the home button, and refresh the widget.\n
+-The app is not yet tested on Android 6, so it might not work correctly.
+	     </string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="creating">Creating widget...</string>
+    <string name="rate">Rate</string>
+    <string name="refresh">Refreshing</string>
+    
+    <!-- v.1.2 -->
+    <string name="toast_format_contact_string">Opening contact %1$s</string>
+    <!-- v.1.3 -->
+    <string name="back_trans">Background transparency:</string>
+    <string name="trans_high">High</string>
+    <string name="trans_low">Low</string>
+    <!-- v.1.7 -->
+    <string name="trans_none">None</string>
+    <string name="trans_full">Full</string>
+    <!-- v.1.7:END -->
+    <string name="appwidget_prefix_back_default">high</string>
+    <string name="appwidget_prefix_title_default">groupName</string>
+
+    <string name="chrome">Chrome</string>
+    <string name="stock">Android browser</string>
+    
+    <!-- v.1.6 -->
+    <string name="theme">Theme:</string>
+    <string name="themedark">Dark</string>
+    <string name="themeLight">Light</string>
+    <!-- v.1.7 -->
+    <string name="themeCustom">Custom</string>
+    <!-- v.1.7:END -->
+    <string name="appwidget_prefix_theme_default">dark</string>
+    
+    <string name="orderby">Order by:</string>
+    <string name="orderbydesc">Description</string>
+    <string name="orderbydate">Most recent</string>
+    <string name="appwidget_prefix_sort_default">desc</string>
+    
+    <!-- v.1.7 -->
+    <string name="textColor">Text Color:</string>
+    <string name="background">Background:</string>
+    <string name="textColorLinks">Text Color (links):</string>
+    <string name="storeColors">Save Selected Colors</string>
+    
+    <string name="ad_unit_id">ca-app-pub-9423408255527730/8053802200</string>
+    <!-- v.1.7:END -->
+    <!-- v.1.8: -->
+    <string name="ad_unit_id_inter">ca-app-pub-9423408255527730/4104799001</string>
+    <!-- ads -->
+    <string name="kids">Kids activities</string>
+    <string name="kidsDesc">Games, math, English and French exercises</string>
+    <string name="pedia">Τα παιδία παίζει</string>
+    <string name="pediaDesc">Παιχνίδια, ασκήσεις μαθηματικών και γλώσσας, ασκήσεις Αγγλικών και Γαλλικών</string>
+    <string name="bestguitar">71+1 best guitarists of rock</string>
+    <string name="bestguitarDesc">A list of the best guitarists of rock</string>
+    <string name="contacts">Contacts in a list Widget</string>
+    <string name="contactsDesc">A widget that shows your contacts in a scrollable list</string>
+    <string name="bookmarks">Bookmarks in a list Widget</string>
+    <string name="bookmarksDesc">A widget that shows your bookmarks in a scrollable list</string>
+    <string name="learneng">Learn English</string>
+    <string name="learnengDesc">Learn English through some easy exercises</string>
+    <string name="otherapps">Other Apps</string>
+    <string name="squarebird">Square Bird Game</string>
+    <string name="squarebirdDesc">A simple game in the popular "tap and fly" manner.</string>
+    <string name="buttonBack"> &lt;&lt; Back &lt;&lt;</string>
+    <string name="memorygame">Memory Game</string>  
+    <string name="memorygameDesc">Memory (match the cards) games mainly for children, but grown ups may find it challenging. </string>
+    <!-- v. 2.3: -->
+     <string name="privacy_policy">We respect your privacy and will not collect any personal information. However, in order for our apps to be free, we show ads.
+         To learn more about the privacy policy of the Ad Networks we use, press here.</string>
+         
+     <string name="allpermissions_rationale">Read Contacts permission is necessary for the widget to show your contacts. Call Phone permission is required to place calls.</string>
+     <string name="permission_request_denied">Permissions request was denied.</string>
+     <string name="read_contacts_permission_request">Read Contacts permission is necessary for the widget to show your contacts. Please enable it in the app settings.</string>
+     <string name="call_phone_permission_request">Call Phone permission is necessary for the widget to show your contacts. Please enable it in the app settings.</string>
+    
+     
+     <!-- v. 2.4: -->   
+       <string name="exit_message">Are you sure you want to exit?</string>  
+       <string name="exit_title">Are you sure?</string>  
+       <string name="yes">Yes</string> 
+       <string name="no">Cancel</string> 
+       
+       <string name="az_appkey">85c29b1aa8b485fd54116710085c0fbf</string>
+       
+       <string name="livewallpaper">Silly Fish Live Wallpaper</string>
+    <string name="livewallpaperDesc">A simple live wallpaper, made just for fun. Press on the screen to change direction of movement.</string>
+    <string name="daydream">Silly Fish Daydream</string>
+    <string name="daydreamDesc">A simple daydream, made just for fun.</string>
+</resources>

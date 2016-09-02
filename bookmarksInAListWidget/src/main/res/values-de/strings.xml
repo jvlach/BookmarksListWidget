@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lesezeichenliste Widget</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="empty_view_text">Keine Lesezeichen gefunden</string>
+    <string name="toast_format_string">Öffnen %1$s</string>
+    <string name="toast_format_sms_string">Öffnen %1$s</string>
+    <string name="item_format_string">%1$s in %2$s</string>
+    <string name="search">Suche</string>
+    <string name="configwhat">Lesezeichen:</string>
+    <string name="favorites">Favoriten</string>
+    <string name="all">Alle</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Kündigen</string>
+    <string name="appwidget_prefix_default">stock</string>
+    <string name="help_main">This is a simple widget that shows your bookmarks (from Android\'s stock browser or Google Chrome) as a scrollable list.\n\n
+         Only these two browsers are supported. 
+        If you use them to serf the internet, you might find this widget useful.\n\n
+	    There are two different widgets included. To install the widget, select \"Lesezeichenliste widget\" 4x2 
+	    or 2x2 from the available widgets.\n 
+	    You will see the configuration screen, where you can select
+	     the transparency of the background, the color theme (dark or light), or you can customize the colors. You can see a preview of the widget with the colors you have selected. 
+	     You can also select whether the bookmarks will be ordered by description or date  of access (most recent first).\n If Google Chrome is installed on your device, you can also select which browser\'s bookmarks you want the widget to show.\n\n
+	     You can have more than one widgets on your home screens, each showing different bookmarks.\n
+	     The widget is resizable. The initial size is 4x2 or 2x2 (columns x rows), but you can resize it as you want. 
+	     To resize, long click on the widget until it gets detached from the screen, then release. You will be able to resize it now.\n\n
+	     If you have changed the bookmarks (add-delete-change), you can refresh each widget by pressing the button with the circular arrows.\n\n
+	     You can also search the bookmarks by clicking the \"Suche\" button. The search is not performed in the widget itself. 
+	     Instead an activity is launched.\n\n
+	     Notes: \n
+-The app needs to be installed in the internal memory of the phone in order for the widget to show up and work.\n
+-If the widget does not show chrome\'s bookmarks: open chrome, put it in the background with the home button, and refresh the widget.\n
+-The app is not yet tested on Android 6, so it might not work correctly.</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="creating">Schaffen Widget...</string>
+    <string name="rate">Bewerten</string>
+    <string name="refresh">Erneuerung</string>
+    
+    <!-- v.1.2 -->
+    <string name="toast_format_contact_string">Öffnen %1$s</string>
+     <!-- v.1.3 -->
+    <string name="back_trans">Hintergrund Transparenz:</string>
+    <string name="trans_high">hoch</string>
+    <string name="trans_low">gering</string>
+    <!-- v.1.7 -->
+    <string name="trans_none">nicht</string>
+    <string name="trans_full">volle</string>
+    <!-- v.1.7:END -->
+    <string name="appwidget_prefix_back_default">high</string>
+    <string name="appwidget_prefix_title_default">groupName</string>
+
+    
+    <string name="chrome">Chrome</string>
+    <string name="stock">Android browser</string>
+    
+    <!-- v.1.6 -->
+    <string name="theme">Theme:</string>
+    <string name="themedark">dunkel</string>
+    <string name="themeLight">helle</string>
+    <!-- v.1.7 -->
+    <string name="themeCustom">Farbauswahl</string>
+     <!-- v.1.7 -->
+    <string name="textColor">Textfarbe:</string>
+    <string name="background">Hintergrund:</string>
+    <string name="textColorLinks">Textfarbe (Links):</string>
+    <string name="storeColors">sparen ausgewählten Farben</string>
+    <!-- v.1.7:END -->
+    <string name="ad_unit_id">ca-app-pub-9423408255527730/8053802200</string>
+    <!-- v.1.7:END -->
+    <string name="appwidget_prefix_theme_default">dark</string>
+    
+    <string name="orderby">Sortierung:</string>
+    <string name="orderbydesc">Alphabetische</string>
+    <string name="orderbydate">Chronologische</string>
+    <string name="appwidget_prefix_sort_default">desc</string>
+    <!-- v.1.8: -->
+    <string name="ad_unit_id_inter">ca-app-pub-9423408255527730/4104799001</string>
+    <!-- ads -->
+     <string name="kids">Aktivitäten für Kinder</string>  
+    <string name="kidsDesc">Mathematik, Englisch, Französisch und Spiele (Gedächtnisspiel etc)</string>  
+    
+    <string name="pedia">Τα παιδία παίζει</string>  
+    <string name="pediaDesc">Παιχνίδια, ασκήσεις μαθηματικών και γλώσσας, ασκήσεις Αγγλικών και Γαλλικών</string>  
+    
+    <string name="bestguitar">71+1 best guitarists of rock</string>  
+    <string name="bestguitarDesc">A list of the best guitarists of rock</string>
+    
+    <string name="contacts">Kontaktliste Widget</string>  
+    <string name="contactsDesc">Dies ist ein einfaches Widget, dass Ihr Telefon Kontakte als einer Liste zeigt</string>
+    
+    <string name="bookmarks">Lesezeichenliste Widget</string>  
+    <string name="bookmarksDesc">A widget that shows your bookmarks in a scrollable list</string>
+    
+    <string name="learneng">Englisch lernen</string>  
+    <string name="learnengDesc">Übungen in englischer Sprache (meist für Kinder)</string>
+    
+    <string name="otherapps">Andere Anwendungen (Apps)</string> 
+
+    <string name="squarebird">Quadrat Vogel Spiel</string>
+    <string name="squarebirdDesc">Man Kann dem Bildschirm drücken und der Vogel kann fliege und die Hindernisse passen.</string>
+    <string name="buttonBack"> &lt;&lt; zurück &lt;&lt;</string>
+    <string name="memorygame">Gedächtnisspiel</string>  
+    <string name="memorygameDesc">Dieses Gedächtnisspiel  bietet allen Kindern einen perfekten Einstieg ins Gedächtnisspiel-Vergnügen.</string>
+        <!-- v. 2.3: -->
+     <string name="privacy_policy">We respect your privacy and will not collect any personal information. However, in order for our apps to be free, we show ads.
+         To learn more about the privacy policy of the Ad Networks we use, press here.</string>
+         
+     <string name="allpermissions_rationale">Read Contacts permission is necessary for the widget to show your contacts. Call Phone permission is required to place calls.</string>
+     <string name="permission_request_denied">Permissions request was denied.</string>
+     <string name="read_contacts_permission_request">Read Contacts permission is necessary for the widget to show your contacts. Please enable it in the app settings.</string>
+     <string name="call_phone_permission_request">Call Phone permission is necessary for the widget to show your contacts. Please enable it in the app settings.</string>
+    
+     
+      <!-- v. 2.4: -->   
+       <string name="exit_message">Sind Sie sicher?</string>  
+       <string name="exit_title">Beenden?</string>  
+       <string name="yes">Ja</string> 
+       <string name="no">Kündigen</string> 
+       
+       <string name="az_appkey">85c29b1aa8b485fd54116710085c0fbf</string>
+       
+       <string name="livewallpaper">Silly Fish Live Wallpaper</string>
+    <string name="livewallpaperDesc">A simple live wallpaper, made just for fun. Press on the screen to change direction of movement.</string>
+    <string name="daydream">Silly Fish Daydream</string>
+    <string name="daydreamDesc">A simple daydream, made just for fun.</string>
+       
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bookmarks.iml" filepath="$PROJECT_DIR$/Bookmarks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookmarksInAListWidget/bookmarksInAListWidget.iml" filepath="$PROJECT_DIR$/bookmarksInAListWidget/bookmarksInAListWidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/colorPicker/colorPicker.iml" filepath="$PROJECT_DIR$/colorPicker/colorPicker.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "gr.jvlach.bookmarkswidget"
+        minSdkVersion 12
+        targetSdkVersion 22
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':colorPicker')
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile files('libs/appszoomsdk.jar')
+    compile files('libs/mobilecoreV2.0Correct.jar')
+    compile 'com.google.android.gms:play-services-ads:9.4.0'
+    compile 'cn.pedant.sweetalert:library:1.3'
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    <!-- height: fill_parent wrap_content-->
+    <LinearLayout 
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="0.5" >
+
+        <ImageView
+            android:id="@+id/avatar1"
+            android:layout_width="fill_parent"
+            android:layout_height="37dp"
+	       
+            
+            android:src="@drawable/ic_launcher" 
+            
+            />
+<!--
+android:layout_weight="0.8" 
+
+android:scaleType="fitCenter"
+    android:adjustViewBounds="false" 
+android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            
+            android:layout_weight="0.2" -->
+
+        <TextView
+            android:id="@+id/email1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:shadowColor="#FFF"
+		      android:shadowDx="3"
+		      android:shadowDy="3"
+		      android:shadowRadius="6"
+		      android:textColor="#0099CC"
+		      android:textStyle="bold"/>
+
+</LinearLayout>
+
+    <LinearLayout 
+     android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="0.5">
+    
+	   <ImageView
+	       android:id="@+id/avatar2"
+	       android:layout_width="fill_parent"
+	       android:layout_height="37dp"
+	       
+	       
+	       android:src="@drawable/ic_launcher" 
+	        
+	        />
+<!-- 
+android:layout_weight="0.8" 
+
+android:paddingLeft="5dp"
+	       android:paddingRight="5dp" 
+	       android:scaleType="fitCenter"
+    android:adjustViewBounds="false"
+	        android:layout_weight="0.2"-->
+
+        <TextView
+            android:id="@+id/email2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:shadowColor="#FFF"
+		      android:shadowDx="3"
+		      android:shadowDy="3"
+		      android:shadowRadius="6"
+		      android:textColor="#0099CC"
+		      android:textStyle="bold"/>
+
+</LinearLayout>
+
+</LinearLayout>
